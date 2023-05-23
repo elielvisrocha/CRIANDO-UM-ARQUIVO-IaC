@@ -22,6 +22,14 @@ useradd amanda -c "amanda" -m -s /bin/bash -p $(openssl passwd senhasecreta)
 useradd rogerio -c "rogerio" -m -s /bin/bash -p $(openssl passwd senhasecreta) 
 
 
+<!---------------- CRIANDO AS PASTAS ---------------->
+
+mkdir publico
+mkdir adm
+mkdir ven
+mkdir sec
+
+
 <!---------------- CRIANDO OS GRUPOS ---------------->
 
 groupadd PUBLICO
@@ -50,13 +58,13 @@ usermod -G GRP_SEC rogerio
 chown root:GRP_ADM /adm/
 chown root:GRP_VEN /ven/
 chown root:GRP_SEC /sec/
-
+chown root:root /publico/
 
 
 <!---------------- FORNECENDO AS PERMISSOES ---------------->
 
 
-chmod 777 /PUBLICO/
+chmod 777 /publico/
 chmod 770 /adm/
 chmod 770 /ven/
 chmod 770 /sec/
