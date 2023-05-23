@@ -47,9 +47,9 @@ usermod -G GRP_SEC rogerio
 
 <!---------------- DEFININDO OS DONOS DOS GRUPOS ---------------->
 
-chown carlos:GRP_ADM /adm/
-chown debora:GRP_VEN /ven/
-chown josefina:GRP_SEC /sec/
+chown root:GRP_ADM /adm/
+chown root:GRP_VEN /ven/
+chown root:GRP_SEC /sec/
 
 
 
