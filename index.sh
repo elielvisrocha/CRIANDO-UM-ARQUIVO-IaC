@@ -30,6 +30,20 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 
+<!---------------- DEFININDO OS USUARIOS NOS GRUPOS ---------------->
+
+usermod -G GRP_ADM carlos
+usermod -G GRP_ADM maria
+usermod -G GRP_ADM joao
+
+usermod -G GRP_VEN debora
+usermod -G GRP_VEN sebastiana
+usermod -G GRP_VEN roberto
+
+usermod -G GRP_SEC josefina
+usermod -G GRP_SEC amanda
+usermod -G GRP_SEC rogerio
+
 
 <!---------------- DEFININDO OS DONOS DOS GRUPOS ---------------->
 
